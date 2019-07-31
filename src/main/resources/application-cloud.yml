@@ -2,4 +2,4 @@ zuul:
   routes:
     weather:
       path: /weather/**
-      url: # va urma
+      url: https://weather-now-micro.herokuapp.com/weather
