@@ -2,5 +2,7 @@ zuul:
   routes:
     weather:
       path: /weather/**
-      url: http://localhost:8081/weather/
-  sensitive-headers: Cookie, Set-Cookie
+      url: http://localhost:8081/weather
+spring:
+  profiles:
+    dev
