@@ -3,3 +3,6 @@ zuul:
     weather:
       path: /weather/**
       url: https://weather-now-micro.herokuapp.com/weather
+spring:
+  profiles:
+    cloud
