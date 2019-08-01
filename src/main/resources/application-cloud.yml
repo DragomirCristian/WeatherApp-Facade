@@ -5,4 +5,5 @@ zuul:
       url: https://weather-now-micro.herokuapp.com/weather
 spring:
   profiles:
-    cloud
+    active:
+      cloud
