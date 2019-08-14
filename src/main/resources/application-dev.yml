@@ -3,6 +3,15 @@ zuul:
     weather:
       path: /weather/**
       url: http://localhost:8081/weather
+
 spring:
   profiles:
     dev
+
+eureka:
+  client:
+    preferIpAddress: true
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: http://localhost:8761/eureka/

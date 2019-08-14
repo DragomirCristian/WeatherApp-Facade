@@ -6,3 +6,13 @@ zuul:
 spring:
   profiles:
     cloud
+
+eureka:
+  instance:
+    non-secure-port: 80
+  client:
+    preferIpAddress: true
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: ${EUREKA_URI:https://weather-app-eureka-server.herokuapp.com/eureka/}
